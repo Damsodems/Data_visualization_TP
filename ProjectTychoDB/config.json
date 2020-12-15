@@ -1,0 +1,201 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [
+        {
+          "dataId": [
+            "mfqrpi10j"
+          ],
+          "id": "1vy3vyyna",
+          "name": [
+            "disease"
+          ],
+          "type": "multiSelect",
+          "value": [
+            "HEPATITIS A"
+          ],
+          "enlarged": False,
+          "plotType": "histogram",
+          "yAxis": None
+        },
+        {
+          "dataId": [
+            "mfqrpi10j"
+          ],
+          "id": "p10rwtgd9",
+          "name": [
+            "year"
+          ],
+          "type": "timeRange",
+          "value": [
+            -924709132800,
+            -861133831800
+          ],
+          "enlarged": True,
+          "plotType": "histogram",
+          "yAxis": None
+        }
+      ],
+      "layers": [
+        {
+          "id": "q0j46m",
+          "type": "geojson",
+          "config": {
+            "dataId": "mfqrpi10j",
+            "label": "disease",
+            "color": [
+              255,
+              203,
+              153
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": True,
+            "visConfig": {
+              "opacity": 0.8,
+              "strokeOpacity": 0.8,
+              "thickness": 0.5,
+              "strokeColor": [
+                248,
+                149,
+                112
+              ],
+              "colorRange": {
+                "name": "ColorBrewer OrRd-6",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fef0d9",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#e34a33",
+                  "#b30000"
+                ]
+              },
+              "strokeColorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "stroked": False,
+              "filled": True,
+              "enable3d": False,
+              "wireframe": False
+            },
+            "textLabel": [
+              {
+                "field": None,
+                "color": [
+                  255,
+                  255,
+                  255
+                ],
+                "size": 18,
+                "offset": [
+                  0,
+                  0
+                ],
+                "anchor": "start",
+                "alignment": "center"
+              }
+            ]
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "incidence_per_capita",
+              "type": "real"
+            },
+            "colorScale": "quantile",
+            "sizeField": None,
+            "sizeScale": "linear",
+            "strokeColorField": None,
+            "strokeColorScale": "quantile",
+            "heightField": None,
+            "heightScale": "linear",
+            "radiusField": None,
+            "radiusScale": "linear"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "mfqrpi10j": [
+              "disease",
+              "name",
+              "year",
+              "incidence_per_capita"
+            ]
+          },
+          "enabled": True
+        },
+        "brush": {
+          "size": 0.5,
+          "enabled": False
+        },
+        "coordinate": {
+          "enabled": False
+        }
+      },
+      "layerBlending": "normal",
+      "splitMaps": [],
+      "animationConfig": {
+        "currentTime": None,
+        "speed": 1
+      }
+    },
+    "mapState": {
+      "bearing": 0,
+      "dragRotate": False,
+      "latitude": 41.174284327189206,
+      "longitude": -119.40339681599639,
+      "pitch": 0,
+      "zoom": 2.415452890758438,
+      "isSplit": False
+    },
+    "mapStyle": {
+      "styleType": "dark",
+      "topLayerGroups": {},
+      "visibleLayerGroups": {
+        "label": True,
+        "road": False,
+        "border": False,
+        "building": False,
+        "water": True,
+        "land": False,
+        "3d building": False
+      },
+      "threeDBuildingColor": [
+        9.665468314072013,
+        17.18305478057247,
+        31.1442867897876
+      ],
+      "mapStyles": {}
+    }
+  }
+}
